@@ -321,13 +321,124 @@ img {
 }
 
 /*=============== ABOUT ===============*/
+.about__container{
+  row-gap: 3rem;
+}
 
+.about__data{
+  text-align: center;
+}
+
+.about__descrition{
+  margin-bottom: 2rem;
+}
+
+.about__image{
+  position: relative;
+  justify-self: center;
+  overflow: hidden;
+}
+
+.about__img{
+  width: 300px;
+  transition: transform .4s;
+}
+
+.about__shadow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,
+              hsla(0, 0%,  0%, 0)50%,
+              hsl(0, 0%, 0%, 0)125%);
+}
+
+.about__image:hover .about__img{
+  transform: scale(1.2);
+}
 
 /*=============== POPULAR ===============*/
+.popular__container{
+  padding-top: 1.5rem;
+  grid-template-columns: 240px;
+  justify-content: center;
+  row-gap: 2.5rem;
+}
 
+.popular__image{
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.popular__img{
+  transition: transform .4s;
+}
+
+.popular__shadow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,
+              hsla(0, 0%, 0%, 0)50%,
+              hsl(0, 0%, 0%, 0)125%);
+}
+
+.popular__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: .5rem;
+}
+
+.popular__location{
+  display: inline-flex;
+  align-items: center;
+  column-gap: .25rem;
+  font-size: var(--small-font-size);
+  font-family: var(--second-font);
+  font-weight: 500;
+}
+
+.popular__location i{
+  font-size: 1rem;
+}
+
+.popular__image:hover .popular__img{
+  transform: scale(1.2);
+}
 
 /*=============== EXPLORE ===============*/
+.explore{
+  position: relative;
+}
 
+.explore__image{
+  position: absolute;
+  overflow: hidden;
+}
+
+.explore__img{
+  width: 100%;
+  height: 333px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.explore__shadow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,
+              hsl(0, 0%, 0%)5%,
+              hsla(0, 0%, 0%, 0)40%,
+              hsla(0, 0%, 0%, 0)60%,
+              hsl(0, 0%, 0%)92%);
+}
 
 /*=============== JOIN ===============*/
 
