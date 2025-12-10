@@ -152,7 +152,7 @@ img {
   color: var(--title-color);
   cursor: pointer;
 }
-/* Navigation for mobile devices */
+/* Navigation for mobile devices
 @media screen and (max-width: 1023px){
   .nav__menu{
     position: fixed;
@@ -165,7 +165,7 @@ img {
     -webkit-backdrop-filter: blur(24px);
     transition: top .4s;
   }
-}
+}*/
 
 .nav__list{
   text-align: center;
@@ -195,17 +195,17 @@ img {
 .nav__link:hover::after{
   width: 70%;
 }
-
+/*
 .nav__close{
   position: absolute;
   top: 1rem;
   right: 1.5rem;
-}
+}*/
 
-/* Show menu */
+/* Show menu
 .show-menu{
   top: 0;
-}
+}*/
 
 /* Add blur to header */
 .blur-header::after{
